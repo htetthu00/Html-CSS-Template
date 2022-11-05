@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Xeno.com</title>
+    <link rel="icon" type="image/x-icon" href="../Images/email.png">
+</head>
+<body>
+    <section id="page" class="home">
+        <nav class="header theme-color">
+            <div class="header-left">
+                <i class="fa fa-envelope" > &nbsp; @xeno.com</i>
+            </div>
+            <div class="header-right">
+                <button class="nav-link">
+                    <i class="fa fa-home" ></i>
+                    &nbsp; Home
+                </button>
+                <a href="#contact" class="contact-link">
+                <button class="nav-link">
+                    <i class="fa fa-envelope-o"></i>
+                    &nbsp; Contact 
+                </button></a>
+                <button class="nav-link" id="signIn">
+                    <i class="fa fa-sign-in" ></i>
+                    &nbsp; Sign In
+                </button>
+                <button class="nav-link" id="nav-signup">
+                    <i class="fa fa-user-plus" ></i>
+                    &nbsp; Sign Up
+                </button>
+            </div>
+        </nav>
+        <div class="home-content">
+            <h1>
+                Start Your E-mail With Us 
+                <i class="fa fa-external-link"></i>
+            </h1>
+            <h3>
+                Xeno Mail brings profile pictures of your contacts to your message list.<br>
+                 Take a look at your inbox to instantly know who's writing you
+            </h3>
+            <button class="signup-btn" id="page-signUp">
+                <i class="fa fa-user-plus" ></i>
+                Sign Up
+            </button>
+        </div>    
+    </section>
+
+    <section class="container" id="Container">
+        <form action="" class="login-form animate">
+            <div>
+                <h1>
+                    <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                    Sign In To Xeno
+                </h1>
+            </div>
+            <div class="text-mail">
+                <i class="fa fa-user-circle" aria-hidden="true" ></i>
+                <input type="text" name="" id="" placeholder="Username(Eg.example@xeno.com)"><br>
+            </div>
+            <div class="text-pws">
+                <i class="fa fa-key" aria-hidden="true" ></i>
+                <input type="password" name="" id="" placeholder="Password">
+            </div>
+            <div class="option-btn">               
+                <button class="cancel" id="Cancel">
+                    <i class="fa fa-times" ></i>
+                    Cancel
+                </button>
+                <button class="submit">
+                    <i class="fa fa-sign-in" ></i>
+                    Sign In
+                </button>                
+            </div>
+            <span class="forget">Forget <a href="">Password?</a></span>
+        </form>
+    </section>
+
+    <section class="sign-up" id="SignUp">
+        <form action="" class="signup-form animate">
+            <div>
+                <h1 class="signup-title">
+                    <i class="fa fa-user-plus" ></i>
+                    Sign up For Xeno
+                </h1>
+            </div>
+            <div class="text-mail">
+                <i class="fa fa-user-circle" aria-hidden="true" ></i>
+                <input type="text" name="" id="" placeholder="Username"><br>
+            </div>
+            <div class="text-mail">
+                <i class="fa fa-envelope-o" aria-hidden="true" ></i>
+                <input type="email" name="" id="" placeholder="Email(Eg.example@xeno.com)">
+            </div>
+            <div class="text-mail">
+                <i class="fa fa-birthday-cake" aria-hidden="true" ></i>
+                <input type="date" name="" id="" placeholder="Birthday">
+            </div>
+            <div class="text-pws">
+                <i class="fa fa-key" aria-hidden="true" ></i>
+                <input type="password" name="" id="" placeholder="Password">
+            </div>
+            <div class="confirm-pws">
+                <input type="password" name="" id="" placeholder="Confirm Password">
+            </div>
+            <div>
+                <span class="privacy">
+                    By creating an account you agree to our 
+                    <a href="">Terms & Privacy</a>.
+                </span>
+            </div>
+            <div class="option-btn">               
+                <button class="cancel" id="signup-cancel">
+                    <i class="fa fa-times" ></i>
+                    Cancel
+                </button>
+                <button class="submit">
+                    <i class="fa fa-sign-in" ></i>
+                    Sign Up
+                </button>                
+            </div>
+        </form>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-us">
+            <div>
+                <h1>Contact Us</h1>
+            </div>
+            <div class="about">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fuga, quis eius nihil ea, deserunt reprehenderit magni voluptate 
+                    dicta odit magnam beatae fugit ratione cupiditate fugiat nemo cum 
+                    consectetur hic consequatur?
+                </p>
+            </div>
+            <div class="profile-icon">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <div class="copyright">
+                <p>
+                    &copy; 2022 Xono.com 
+                    <i class="fa fa-laptop"></i>
+                    By <span>Htet Thu</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('signIn').addEventListener('click', (e) =>{
+            e.preventDefault();
+            document.getElementById('Container').style.display='block'
+        })
+        document.getElementById('Cancel').addEventListener('click', (e) =>{
+            e.preventDefault();
+            document.getElementById('Container').style.display='none'
+        })   
+        window.onclick = (e) => {
+            if(e.target == document.getElementById('Container')){
+                document.getElementById('Container').style.display='none'
+            }else if(e.target == document.getElementById('SignUp')){
+                 document.getElementById('SignUp').style.display='none'
+                }
+        }
+        document.getElementById('nav-signup').addEventListener('click', (e) =>{
+            e.preventDefault();
+            document.getElementById('SignUp').style.display='block'
+        })
+        document.getElementById('page-signUp').addEventListener('click', (e) =>{
+            e.preventDefault();
+            document.getElementById('SignUp').style.display='block'
+        })
+        // window.onclick = (e) => {
+        //     if(e.target == document.getElementById('SignUp')){
+        //         document.getElementById('SignUp').style.display='none'
+        //     }
+        // }
+        document.getElementById('signup-cancel').addEventListener('click', (e) =>{
+            e.preventDefault();
+            document.getElementById('SignUp').style.display='none'
+        })
+    </script>
+</body>
+</html>

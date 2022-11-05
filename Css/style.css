@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+}
+body{
+    background-color: #eceaea;
+    height: 100vh;
+}
+.home{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../Images/cover3.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+}
+.theme-color{
+    color: #663399;
+}
+.nav-link{
+    border: none;
+    padding: 29px 20px;
+    padding-right: 30px;
+    font-size: 16px;
+    background: #fff;
+    color: #639;
+    /* padding-right: 10px; */
+    cursor: pointer;
+}
+.header-left{
+    float: left;
+    padding: 20px;
+    padding-left: 20px;
+    font-size: 30px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+.header-right{
+    float: right;
+}
+.nav-link:hover{
+    background-color: #7548a2;
+    color: #fff;
+    transition: 0.5s;
+}
+.signup-btn{
+    border-radius: 0px;
+    padding: 18px;
+    width: 200px;
+    display: inline-block;
+    color: #7548a2;
+    border: 1px solid #7548a2;
+    cursor: pointer;
+    background: transparent;
+    font-size: 20px;
+}
+.signup-btn:hover{
+    background-color: #663399;
+    color: #fff;
+    transition: 0.8s;
+}
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+}
+.home-content h1{
+    width: 100%;
+    color: #b5a6c6;
+    /* position: absolute; */
+    top: 30%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    /* margin-left: 100px; */
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.home-content h3{
+    color: #b5a6c6;
+    padding-bottom: 30px;
+}
+/* .contact-section{
+    height: 100vh;
+    width: 100%;
+} */
+.container{
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+    transition: 0.7s;
+}
+.login-form{
+    background:rgba(60, 65, 69, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+    width:550px;
+    margin: 10% auto 15% auto;
+    border: 1px solid #888;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 20px; */
+    transition: 0.7s;
+    overflow: hidden;
+}
+.login-form h1{
+    color: #b5a6c6;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.login-form h1 i{
+    color: #b5a6c6;
+    font-size: 40px;
+}
+.forget{
+    color: #faf8fc;
+    margin-left: 60%;
+    margin-bottom: 30px;
+}
+.forget a{
+    color: #b5a6c6;
+}
+.text-mail{
+    /* background-color: #7548a2; */
+    border: 0;
+    color: #888;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-pws{
+    border: 0;
+    color: #888;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.confirm-pws{
+    border: 0;
+    color: #888;
+    margin-bottom: 50px;
+    margin-left: 55px;
+}
+input{
+    padding: 10px;
+    width: 300px;
+    font-size: 17px;
+    outline: none;
+}
+.privacy{
+    color: #faf8fc;
+    margin-bottom: 30px;
+}
+.privacy a{
+    color: #b5a6c6;
+}
+.text-mail i{
+    background-color: rgb(255, 249, 249);
+    color: #639;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 50px;
+    padding: 3px;
+    /* color: #639;
+    width: 47px;
+    height: 47px;
+    margin: 0 auto; */
+}
+/* .text-mail fa{
+font-size: 20px;
+} */
+.text-pws i{
+    background-color: rgb(255, 249, 249);
+    color: #639;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 50px;
+    padding: 4px;
+}
+.option-btn{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.cancel{
+    margin-right: 20px;
+    border-radius: 0px;
+    padding: 15px;
+    width: 150px;
+    display: inline-block;
+    color: #7548a2;
+    border: 1px solid #7548a2;
+    cursor: pointer;
+    font-size: 20px;
+}
+.submit{
+    margin-left: 20px;
+    border-radius: 0px;
+    padding: 15px;
+    width: 150px;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #7548a2;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #663399;
+}
+.animate {
+    animation: animatezoom 0.6s
+} 
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+.sign-up{
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+    transition: 0.7s;
+    /* overflow: auto; */
+}
+.signup-form{
+    background:rgba(60, 65, 69, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+    width:550px;
+    margin: 3% auto 15% auto;
+    border: 1px solid #888;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.7s;
+    
+}
+.signup-title{
+    color: #b5a6c6;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.contact-section{
+    min-height: 60%;
+    width: 100%;
+    background-color: #fff;
+}
+ .contact-us{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 1px;
+    /* height: 100vh; */
+    background-color: #fafafa;
+}
+.contact-us h1{
+    margin-top: 20px;
+    font-size: 40px;
+    color: #639;
+}
+.about p{
+    padding: 50px;
+    line-height: 40px;
+    font-size: 20px;
+}
+.profile-icon{
+    padding: 20px;
+    cursor: pointer;
+}
+.profile-icon i{
+    padding: 20px;
+    color: #663399;
+}
+.copyright i{
+    color: #663399;
+}
+.copyright span{
+    color: #663399;
+}
+.copyright p{
+    padding: 20px;
+}
+.contact-link{
+    text-decoration: none;
+    color: #639;
+}
+.contact-link:hover{
+    color: #fff;
+}
